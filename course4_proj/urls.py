@@ -16,12 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import gh.views
+<<<<<<< HEAD
 import movies.views
+=======
+>>>>>>> e5992511041f7ad0af7b8f217b3e38f4a0b92d8b
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", gh.views.index),
+<<<<<<< HEAD
     path("search/", movies.views.search, name="search"),
     path("search-wait/<uuid:result_uuid>", movies.views.search_wait, name="search_wait"),
     path("search-results/", movies.views.search_results, name="search_results"),
 ]   
+=======
+]
+>>>>>>> e5992511041f7ad0af7b8f217b3e38f4a0b92d8b

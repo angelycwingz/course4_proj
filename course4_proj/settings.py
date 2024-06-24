@@ -53,7 +53,10 @@ class Dev(Configuration):
         'django.contrib.staticfiles',
         'movies',
         'gh',
+<<<<<<< HEAD
         'django_celery_results',
+=======
+>>>>>>> e5992511041f7ad0af7b8f217b3e38f4a0b92d8b
     ]
 
     MIDDLEWARE = [
