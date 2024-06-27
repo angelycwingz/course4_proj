@@ -53,10 +53,7 @@ class Dev(Configuration):
         'django.contrib.staticfiles',
         'movies',
         'gh',
-<<<<<<< HEAD
         'django_celery_results',
-=======
->>>>>>> e5992511041f7ad0af7b8f217b3e38f4a0b92d8b
     ]
 
     MIDDLEWARE = [
@@ -171,3 +168,6 @@ class Dev(Configuration):
 
     CELERY_RESULT_BACKEND = "django-db"
     CELERY_BROKER_URL = "redis://localhost:6379/0"
+
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    ADMINS = [("Aditya", "aditya@example.com"), ("Ben", "ben@example.com")]
